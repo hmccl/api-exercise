@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de APIs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Blog de APIs</h1>
+        <p>Explore diferentes APIs através deste blog interativo.</p>
+    </header>
+
+    <main>
+        <!-- Seção da API de Clima -->
+        <section class="blog-post">
+            <h2>Obter o Clima de Teresina</h2>
+            <button id="obter-clima">Obter Clima</button>
+            <p id="saida-clima"></p>
+        </section>
+
+        <section class="blog-post">
+            <h2>Quiz: Obter uma Pergunta Aleatória</h2>
+            <button id="obter-trivia">Obter Trivia</button>
+            <div id="saida-trivia" style="display:none;">
+                <p id="trivia-pergunta"></p>
+                <form id="form-trivia"></form>
+                <button id="submit-trivia" style="display:none;">Enviar Resposta</button>
+                <p id="feedback-trivia"></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
