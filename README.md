@@ -8,6 +8,8 @@ Repositório de exercícios com APIs.
     - Retorna o tempo em Teresina
 1. The Trivia API
     - Retorna uma questão de múltipla escolha de conhecimentos gerais
+1. Dog CEO
+    - Retorna uma foto aleatória de cachoro junto com sua raça
 
 ## Grupo
 

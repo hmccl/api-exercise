@@ -11,6 +11,7 @@ document.getElementById('obter-clima').addEventListener('click', () => {
     .catch(error => console.error('Erro:', error));
 });
 
+// API Trivia
 document.getElementById('obter-trivia').addEventListener('click', () => {
   fetch('https://the-trivia-api.com/v2/questions')
     .then(r => r.json())
@@ -55,4 +56,38 @@ document.getElementById('obter-trivia').addEventListener('click', () => {
       };
     })
     .catch(e => console.error('Erro Trivia:', e));
+});
+
+// API Dog CEO
+document.getElementById('obter-cachorro').addEventListener('click', () => {
+  const racaElement = document.getElementById('raca-cachorro');
+  const fotoElement = document.getElementById('foto-cachorro');
+  
+  fotoElement.style.display = 'none';
+  
+  fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        const imageUrl = data.message;
+        
+        const urlParts = imageUrl.split('/');
+        const breedPart = urlParts[4]; // raça
+        let raca = breedPart;
+        
+        // Capitaliza primeira letra
+        raca = raca.charAt(0).toUpperCase() + raca.slice(1);
+        
+        racaElement.innerHTML = `<strong>Raça:</strong> ${raca}`;
+        fotoElement.src = imageUrl;
+        fotoElement.style.display = 'block';
+        
+      } else {
+        racaElement.innerHTML = '<p>Erro ao carregar cachorro</p>';
+      }
+    })
+    .catch(error => {
+      console.error('Erro Dog CEO:', error);
+      racaElement.innerHTML = '<p>Erro ao carregar cachorro</p>';
+    });
 });

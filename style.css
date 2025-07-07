@@ -26,6 +26,7 @@ main {
     margin-bottom: 2rem;
     padding: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 button {
@@ -34,6 +35,7 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 button:hover {
@@ -46,4 +48,6 @@ img {
     height: auto;
     margin-top: 1rem;
     display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
