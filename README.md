@@ -16,3 +16,4 @@ Repositório de exercícios com APIs.
 - Rafael
 - José Macedo
 - Hélio
+- Emanoel
