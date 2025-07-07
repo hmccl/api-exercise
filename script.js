@@ -56,4 +56,3 @@ document.getElementById('obter-trivia').addEventListener('click', () => {
     })
     .catch(e => console.error('Erro Trivia:', e));
 });
-
