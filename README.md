@@ -8,4 +8,9 @@ Repositório de exercícios com APIs.
     - Retorna o tempo em Teresina
 1. The Trivia API
     - Retorna uma questão de múltipla escolha de conhecimentos gerais
-1. 
+
+## Grupo
+
+- Rafael
+- José Macedo
+- Hélio
